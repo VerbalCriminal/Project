@@ -1,0 +1,24 @@
+#####################
+#####	NOTES	#####
+#####################
+No hashing on password field yet, no register, checks login
+
+
+temp logins for postgres used in php
+------------------------------------
+dbname=postgres user=postgres password=adam
+
+
+SCHEMA
+-------
+public (default)
+
+
+TABLES
+--------
+
+user
+-----
+username - character varying (24) Primary Key
+password - character varying (24) Not Null
+accesslevel - boolean Not Null DEFAULT false		#for checking admin(true) or user(false)
